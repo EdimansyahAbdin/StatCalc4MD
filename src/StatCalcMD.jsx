@@ -1941,14 +1941,14 @@ function LandingPage({ onEnter }) {
   return (
     <div style={{
       fontFamily: "'Inter', system-ui, sans-serif",
-      background: "linear-gradient(160deg, #0f0c29 0%, #1e1b4b 40%, #1a237e 100%)",
-      minHeight: "100vh", overflowY: "auto", color: "#fff",
+      background: "#ffffff",
+      minHeight: "100vh", overflowY: "auto", color: "#1e3a5f",
     }}>
       {/* Hero */}
       <div style={{ textAlign: "center", padding: "52px 24px 36px" }}>
         <div style={{
           width: 64, height: 64, borderRadius: 18,
-          background: "rgba(255,255,255,0.12)", border: "1px solid rgba(255,255,255,0.20)",
+          background: "#eef2ff", border: "1px solid #c7d2fe",
           display: "flex", alignItems: "center", justifyContent: "center",
           fontSize: 30, fontWeight: 700, margin: "0 auto 20px",
           boxShadow: "0 8px 32px rgba(99,102,241,0.35)",
@@ -1957,7 +1957,7 @@ function LandingPage({ onEnter }) {
         <h1 style={{ fontSize: 32, fontWeight: 800, letterSpacing: "-0.03em", margin: "0 0 10px", lineHeight: 1.15 }}>
           StatCalc <span style={{ color: "#818cf8" }}>MD</span>
         </h1>
-        <p style={{ fontSize: 16, color: "#a5b4fc", margin: "0 0 28px", fontWeight: 500 }}>
+        <p style={{ fontSize: 16, color: "#1e3a5f", margin: "0 0 28px", fontWeight: 500 }}>
           Sample size calculator for medical researchers & clinicians
         </p>
 
@@ -1972,21 +1972,21 @@ function LandingPage({ onEnter }) {
           ].map(({ val, label }) => (
             <div key={label} style={{
               display: "flex", alignItems: "center", gap: 6,
-              background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.15)",
+              background: "#eef2ff", border: "1px solid #c7d2fe",
               borderRadius: 24, padding: "5px 14px",
             }}>
-              <span style={{ fontSize: 13, fontWeight: 700, color: "#fff" }}>{val}</span>
-              <span style={{ fontSize: 11, color: "#818cf8" }}>{label}</span>
+              <span style={{ fontSize: 13, fontWeight: 700, color: "#1e3a5f" }}>{val}</span>
+              <span style={{ fontSize: 11, color: "#4f46e5" }}>{label}</span>
             </div>
           ))}
         </div>
 
         {/* Description */}
-        <p style={{ fontSize: 14, color: "#c7d2fe", lineHeight: 1.75, maxWidth: 620, margin: "0 auto 40px" }}>
+        <p style={{ fontSize: 14, color: "#1e3a5f", lineHeight: 1.75, maxWidth: 620, margin: "0 auto 40px" }}>
           Every calculation runs locally in your browser — no server, no data sent anywhere. For each design
-          you get a <strong style={{ color: "#fff" }}>plain-language interpretation</strong>, a{" "}
-          <strong style={{ color: "#fff" }}>ready-to-paste manuscript paragraph</strong> with embedded textbook
-          citations, <strong style={{ color: "#fff" }}>verified R / Stata / SAS code</strong> to reproduce the
+          you get a <strong style={{ color: "#1e3a5f" }}>plain-language interpretation</strong>, a{" "}
+          <strong style={{ color: "#1e3a5f" }}>ready-to-paste manuscript paragraph</strong> with embedded textbook
+          citations, <strong style={{ color: "#1e3a5f" }}>verified R / Stata / SAS code</strong> to reproduce the
           result independently, and the exact book chapter and page number so a reviewer can check the formula themselves.
         </p>
 
@@ -2011,18 +2011,18 @@ function LandingPage({ onEnter }) {
 
       {/* What each result gives you */}
       <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 20px 32px" }}>
-        <div style={{ fontSize: 10, fontWeight: 700, color: "#818cf8", letterSpacing: "0.09em", marginBottom: 12, textAlign: "center" }}>
+        <div style={{ fontSize: 10, fontWeight: 700, color: "#4f46e5", letterSpacing: "0.09em", marginBottom: 12, textAlign: "center" }}>
           WHAT EACH RESULT GIVES YOU
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(190px, 1fr))", gap: 10 }}>
           {OVERVIEW_DATA.outputs.map(o => (
             <div key={o.label} style={{
-              background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.10)",
+              background: "#f8fafc", border: "1px solid #e2e8f0",
               borderRadius: 12, padding: "14px 16px",
             }}>
               <div style={{ fontSize: 22, marginBottom: 6 }}>{o.icon}</div>
-              <div style={{ fontSize: 13, fontWeight: 700, color: "#e0e7ff", marginBottom: 5 }}>{o.label}</div>
-              <div style={{ fontSize: 11.5, color: "#94a3b8", lineHeight: 1.55 }}>{o.desc}</div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: "#1e3a5f", marginBottom: 5 }}>{o.label}</div>
+              <div style={{ fontSize: 11.5, color: "#64748b", lineHeight: 1.55 }}>{o.desc}</div>
             </div>
           ))}
         </div>
@@ -2030,13 +2030,13 @@ function LandingPage({ onEnter }) {
 
       {/* Supported designs */}
       <div style={{ maxWidth: 860, margin: "0 auto", padding: "0 20px 32px" }}>
-        <div style={{ fontSize: 10, fontWeight: 700, color: "#818cf8", letterSpacing: "0.09em", marginBottom: 12, textAlign: "center" }}>
+        <div style={{ fontSize: 10, fontWeight: 700, color: "#4f46e5", letterSpacing: "0.09em", marginBottom: 12, textAlign: "center" }}>
           {totalDesigns} SUPPORTED STUDY DESIGNS ACROSS 10 CATEGORIES
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(195px, 1fr))", gap: 9 }}>
           {OVERVIEW_DATA.designs.map(d => (
             <div key={d.group} style={{
-              background: "rgba(255,255,255,0.04)", border: `1px solid ${d.color}35`,
+              background: "#f8fafc", border: `1px solid ${d.color}35`,
               borderRadius: 11, padding: "11px 14px",
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 7 }}>
@@ -2049,7 +2049,7 @@ function LandingPage({ onEnter }) {
                 }}>{d.count}</span>
               </div>
               {d.items.map(item => (
-                <div key={item} style={{ fontSize: 10.5, color: "#94a3b8", lineHeight: 1.65, paddingLeft: 2 }}>
+                <div key={item} style={{ fontSize: 10.5, color: "#475569", lineHeight: 1.65, paddingLeft: 2 }}>
                   · {item}
                 </div>
               ))}
@@ -2064,8 +2064,8 @@ function LandingPage({ onEnter }) {
           onClick={() => setRefOpen(r => !r)}
           style={{
             display: "flex", alignItems: "center", gap: 7, width: "100%", justifyContent: "center",
-            background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)",
-            borderRadius: 10, padding: "10px 20px", color: "#818cf8",
+            background: "#f1f5f9", border: "1px solid #e2e8f0",
+            borderRadius: 10, padding: "10px 20px", color: "#4f46e5",
             fontSize: 11, fontWeight: 700, letterSpacing: "0.07em", cursor: "pointer", marginBottom: 12,
           }}
         >
@@ -2077,7 +2077,7 @@ function LandingPage({ onEnter }) {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: 7 }}>
             {OVERVIEW_DATA.references.map((ref, i) => (
               <div key={i} style={{
-                background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)",
+                background: "#f8fafc", border: "1px solid #e2e8f0",
                 borderRadius: 9, padding: "10px 13px", display: "flex", gap: 10, alignItems: "flex-start",
               }}>
                 <span style={{
@@ -2087,8 +2087,8 @@ function LandingPage({ onEnter }) {
                   alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2,
                 }}>{i + 1}</span>
                 <div>
-                  <div style={{ fontSize: 12, fontWeight: 700, color: "#e0e7ff" }}>{ref.short}</div>
-                  <div style={{ fontSize: 10.5, color: "#818cf8", lineHeight: 1.45, marginTop: 2 }}>{ref.full}</div>
+                  <div style={{ fontSize: 12, fontWeight: 700, color: "#1e3a5f" }}>{ref.short}</div>
+                  <div style={{ fontSize: 10.5, color: "#4f46e5", lineHeight: 1.45, marginTop: 2 }}>{ref.full}</div>
                   <div style={{ fontSize: 10, color: "#475569", marginTop: 3 }}>Covers: {ref.covers}</div>
                 </div>
               </div>
@@ -2103,8 +2103,8 @@ function LandingPage({ onEnter }) {
           onClick={onEnter}
           style={{
             padding: "12px 40px", borderRadius: 12,
-            background: "rgba(255,255,255,0.10)", border: "1px solid rgba(255,255,255,0.20)",
-            color: "#e0e7ff", fontSize: 14, fontWeight: 700, cursor: "pointer",
+            background: "#eef2ff", border: "1px solid #c7d2fe",
+            color: "#1e3a5f", fontSize: 14, fontWeight: 700, cursor: "pointer",
           }}
         >
           Enter Calculator →
@@ -2478,7 +2478,8 @@ export default function StatCalcMD() {
 
       {/* ── TOP NAV BAR ── */}
       <div style={{
-        background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #1e40af 100%)",
+        background: "#ffffff",
+        borderBottom: "1px solid #e2e8f0",
         padding: "12px 16px 10px",
         display: "flex", alignItems: "center", justifyContent: "space-between",
         flexShrink: 0,
@@ -2488,15 +2489,15 @@ export default function StatCalcMD() {
           {mobileScreen !== "design" && (
             <button
               onClick={() => setMobileScreen(mobileScreen === "results" ? "params" : "design")}
-              style={{ background: "none", border: "none", color: "#a5b4fc", fontSize: 20, cursor: "pointer", padding: "0 4px 0 0", lineHeight: 1 }}
+              style={{ background: "none", border: "none", color: "#1e3a5f", fontSize: 20, cursor: "pointer", padding: "0 4px 0 0", lineHeight: 1 }}
             >‹</button>
           )}
-          <div style={{ width: 26, height: 26, borderRadius: 7, background: "rgba(255,255,255,0.15)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "#fff" }}>Σ</div>
-          <span style={{ fontSize: 15, fontWeight: 700, color: "#fff", letterSpacing: "-0.01em" }}>StatCalc MD</span>
+          <div style={{ width: 26, height: 26, borderRadius: 7, background: "#eef2ff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 13, fontWeight: 700, color: "#4f46e5" }}>Σ</div>
+          <span style={{ fontSize: 15, fontWeight: 700, color: "#1e3a5f", letterSpacing: "-0.01em" }}>StatCalc MD</span>
         </div>
         <button
           onClick={() => setPage("landing")}
-          style={{ background: "rgba(255,255,255,0.10)", border: "1px solid rgba(255,255,255,0.18)", borderRadius: 7, padding: "4px 11px", color: "#c7d2fe", fontSize: 11.5, fontWeight: 600, cursor: "pointer" }}
+          style={{ background: "#eef2ff", border: "1px solid #c7d2fe", borderRadius: 7, padding: "4px 11px", color: "#4f46e5", fontSize: 11.5, fontWeight: 600, cursor: "pointer" }}
         >About</button>
       </div>
 
