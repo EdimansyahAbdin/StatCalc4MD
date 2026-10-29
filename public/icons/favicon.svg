@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="50%" style="stop-color:#312e81"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="sigmaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a5b4fc"/>
+      <stop offset="100%" style="stop-color:#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="114" ry="114" fill="url(#bg)"/>
+
+  <!-- Subtle inner glow -->
+  <rect width="512" height="512" rx="114" ry="114"
+    fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+
+  <!-- Sigma symbol Σ -->
+  <text
+    x="256" y="340"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="280"
+    font-weight="700"
+    text-anchor="middle"
+    fill="url(#sigmaGrad)"
+    letter-spacing="-8"
+  >Σ</text>
+
+  <!-- MD label at bottom -->
+  <text
+    x="256" y="440"
+    font-family="-apple-system, 'Inter', sans-serif"
+    font-size="72"
+    font-weight="700"
+    text-anchor="middle"
+    fill="rgba(165,180,252,0.70)"
+    letter-spacing="6"
+  >MD</text>
+</svg>

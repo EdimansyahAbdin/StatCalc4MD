@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <!-- ══ PRIMARY SEO ══════════════════════════════════════════ -->
+    <title>Free Sample Size Calculator | StatCalc MD — Power Analysis for Medical Research</title>
+    <meta name="description" content="Free online sample size calculator for medical researchers and clinicians. Calculate power analysis for 26 study designs including RCT, ANOVA, survival analysis, regression, SEM and surveys. Generates manuscript paragraphs with textbook citations, R, Stata and SAS code." />
+    <meta name="keywords" content="sample size calculator, free sample size calculator, power analysis calculator, power calculation, clinical trial sample size, RCT sample size, ANOVA power analysis, survival analysis sample size, biostatistics calculator, medical research statistics, Cohen power analysis, log-rank test sample size, logistic regression sample size, SEM power analysis, survey sample size calculator" />
+    <meta name="author" content="Dr. Edimansyah Abdin, Principal Biostatistician, Institute of Mental Health (IMH), Singapore" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <link rel="canonical" href="https://edimansyahabdin.github.io/statcalc/" />
+
+    <!-- ══ OPEN GRAPH (WhatsApp, Facebook, LinkedIn) ════════════ -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Free Sample Size Calculator | StatCalc MD" />
+    <meta property="og:description" content="Free power analysis & sample size calculator for 26 study designs. Generates manuscript paragraphs with citations, plus R, Stata & SAS code. Used by medical researchers & clinicians." />
+    <meta property="og:url" content="https://edimansyahabdin.github.io/statcalc/" />
+    <meta property="og:image" content="https://edimansyahabdin.github.io/statcalc/icons/icon-512.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:site_name" content="StatCalc MD" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ══ TWITTER CARD ══════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Free Sample Size Calculator | StatCalc MD" />
+    <meta name="twitter:description" content="Free power analysis for 26 study designs. R, Stata & SAS code. Manuscript paragraphs with textbook citations." />
+    <meta name="twitter:image" content="https://edimansyahabdin.github.io/statcalc/icons/icon-512.png" />
+
+    <!-- ══ JSON-LD STRUCTURED DATA ═══════════════════════════════ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "StatCalc MD",
+      "alternateName": ["Sample Size Calculator", "Power Analysis Calculator", "StatCalc MD"],
+      "description": "Free online sample size and power analysis calculator for medical researchers. Supports 26 study designs including t-tests, ANOVA, proportions, survival analysis, logistic regression, SEM, cluster RCTs and surveys. Generates manuscript-ready paragraphs with embedded textbook citations and verified R, Stata and SAS replication code.",
+      "url": "https://edimansyahabdin.github.io/statcalc/",
+      "applicationCategory": "MedicalApplication",
+      "applicationSubCategory": "Biostatistics Calculator",
+      "operatingSystem": "Web browser, iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Sample size calculation for RCTs",
+        "Power analysis for ANOVA designs",
+        "Survival analysis sample size (log-rank, Cox)",
+        "Survey sample size with design effect",
+        "Logistic regression power analysis",
+        "SEM power analysis (RMSEA-based)",
+        "Cluster RCT sample size",
+        "Non-inferiority and equivalence trials",
+        "Manuscript paragraph generator with citations",
+        "R, Stata and SAS code output",
+        "Works offline (Progressive Web App)"
+      ],
+      "screenshot": "https://edimansyahabdin.github.io/statcalc/icons/icon-512.png",
+      "author": {
+        "@type": "Person",
+        "name": "Dr. Edimansyah Abdin",
+        "jobTitle": "Principal Biostatistician",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Institute of Mental Health (IMH)",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "SG"
+          }
+        }
+      },
+      "keywords": "sample size calculator, power analysis, clinical trial, biostatistics, RCT, ANOVA, survival analysis, medical research, free calculator"
+    }
+    </script>
+
+    <!-- ══ PWA ════════════════════════════════════════════════════ -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#312e81" />
+
+    <!-- ══ iOS PWA ════════════════════════════════════════════════ -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="StatCalc MD" />
+    <link rel="apple-touch-icon" href="./icons/icon-180.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/icon-152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="./icons/icon-167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-180.png" />
+
+    <!-- iOS splash screens -->
+    <link rel="apple-touch-startup-image"
+      media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3)"
+      href="./splash/splash-1290x2796.png" />
+    <link rel="apple-touch-startup-image"
+      media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3)"
+      href="./splash/splash-1170x2532.png" />
+    <link rel="apple-touch-startup-image"
+      media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+      href="./splash/splash-750x1334.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./icons/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/icon-32.png" />
+    <meta name="format-detection" content="telephone=no, email=no, address=no" />
+
+    <!-- Service worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch(() => {});
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/statcalc/assets/index-zMKP6UYG.js"></script>
+  </head>
+  <body style="margin:0;padding:0;background:#1e1b4b;">
+
+    <!-- ══ NOSCRIPT FALLBACK — search crawlers that don't run JS ══
+         This is what Google, Bing, and DuckDuckGo index when JS is off.
+         Keep it keyword-rich and accurate. ═════════════════════════ -->
+    <noscript>
+      <div style="font-family:Georgia,serif;max-width:780px;margin:0 auto;padding:40px 20px;color:#1e293b;background:#fff;">
+        <h1>StatCalc MD — Free Sample Size Calculator for Medical Research</h1>
+        <p>StatCalc MD is a free online sample size and power analysis calculator designed for medical researchers, clinicians, and biostatistics students. All calculations run locally in your browser with no data collection.</p>
+
+        <h2>26 Study Designs for Sample Size &amp; Power Calculation</h2>
+        <h3>Means &amp; t-tests</h3>
+        <ul>
+          <li>Two independent means (parallel group RCT, continuous outcome)</li>
+          <li>Paired / matched means (crossover, before-after)</li>
+          <li>One-sample mean (vs. known reference value)</li>
+        </ul>
+        <h3>Proportions &amp; Binary Outcomes</h3>
+        <ul>
+          <li>Two independent proportions (RCT binary primary endpoint)</li>
+          <li>One-sample proportion (vs. known p₀)</li>
+          <li>Paired proportions — McNemar test</li>
+          <li>Chi-square test (goodness-of-fit, independence)</li>
+          <li>Non-inferiority trial — proportions</li>
+        </ul>
+        <h3>ANOVA Designs</h3>
+        <ul>
+          <li>One-way ANOVA (k independent groups)</li>
+          <li>Two-way ANOVA (factorial design with interaction)</li>
+          <li>Repeated measures ANOVA (within-subjects)</li>
+          <li>ANCOVA (covariate-adjusted group comparison)</li>
+        </ul>
+        <h3>Regression &amp; Correlation</h3>
+        <ul>
+          <li>Pearson correlation (H₀: ρ = 0, Fisher z-transform)</li>
+          <li>Comparing two independent correlations</li>
+          <li>Simple linear regression (slope test)</li>
+          <li>Multiple regression R² (Cohen f²)</li>
+          <li>Logistic regression (Hsieh, Bloch &amp; Larsen method)</li>
+        </ul>
+        <h3>Survival Analysis</h3>
+        <ul>
+          <li>Log-rank test (Schoenfeld 1981 formula)</li>
+          <li>Cluster RCT — log-rank (survival with ICC adjustment)</li>
+          <li>Cox proportional hazards regression</li>
+        </ul>
+        <h3>Clinical Trials &amp; Equivalence</h3>
+        <ul>
+          <li>Equivalence trial — TOST (two one-sided tests)</li>
+        </ul>
+        <h3>Diagnostic Studies</h3>
+        <ul>
+          <li>ICC — intra-class correlation for reliability studies</li>
+        </ul>
+        <h3>Phase II Oncology</h3>
+        <ul>
+          <li>Simon two-stage design (optimal and minimax)</li>
+        </ul>
+        <h3>Survey &amp; Epidemiology</h3>
+        <ul>
+          <li>Survey prevalence / proportion (with design effect DEFF)</li>
+          <li>Survey mean estimation</li>
+        </ul>
+        <h3>SEM &amp; Mediation</h3>
+        <ul>
+          <li>Structural equation model — RMSEA-based power (MacCallum et al. 1996, semPower)</li>
+          <li>Simple mediation — Sobel test</li>
+        </ul>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li><strong>Manuscript paragraph generator</strong> — ready-to-paste sample size justification with embedded textbook citations and page numbers</li>
+          <li><strong>Verified replication code</strong> — R, Stata, and SAS commands to independently confirm every calculation</li>
+          <li><strong>12 authoritative references</strong> — Cohen (1988), Aberson (2019), Machin et al. (2009), Chow et al. (2008), Zhang &amp; Yuan (2018) WebPower, Jak et al. (2020) power4SEM, Moshagen &amp; Bader (2024) semPower, Valliant et al. (2013), Aday &amp; Cornelius (2006), Fleiss et al. (2003), Stata PSS Manual (2023), SAS PROC POWER (2015)</li>
+          <li><strong>WhatsApp share &amp; PDF export</strong> of results</li>
+          <li><strong>Offline capable</strong> — works without internet after first load (Progressive Web App)</li>
+          <li><strong>iPhone optimised</strong> — mobile-first layout for use at the bedside</li>
+          <li><strong>No account required</strong> — completely free, no sign-in, no data collection</li>
+        </ul>
+
+        <h2>About</h2>
+        <p>StatCalc MD was developed by <strong>Dr. Edimansyah Abdin</strong>, Principal Biostatistician at the Institute of Mental Health (IMH), Singapore. It is intended for use in clinical research protocol writing, ethics committee submissions, and biostatistics education.</p>
+        <p>Please enable JavaScript to use the interactive calculator.</p>
+        <p><a href="https://edimansyahabdin.github.io/statcalc/">StatCalc MD — Free Sample Size Calculator</a></p>
+      </div>
+    </noscript>
+
+    <div id="root"></div>
+  </body>
+</html>

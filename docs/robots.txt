@@ -1,0 +1,8 @@
+# StatCalc MD — robots.txt
+# Allow all crawlers to index everything
+
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap
+Sitemap: https://edimansyahabdin.github.io/statcalc/sitemap.xml
