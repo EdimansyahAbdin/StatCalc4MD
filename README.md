@@ -2,7 +2,7 @@
 
 **Sample size calculator for medical researchers and clinicians**
 
-🌐 **Live site:** [edimansyahabdin.github.io/statcalc](https://edimansyahabdin.github.io/statcalc)
+🌐 **Live site:** [edimansyahabdin.github.io/StatCalc4MD](https://edimansyahabdin.github.io/StatCalc4MD)
 
 ---
 
