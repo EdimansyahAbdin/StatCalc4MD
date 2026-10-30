@@ -60,7 +60,7 @@ StatCalc MD is a free, open-source sample size calculator built for medical rese
 
 ## Install on iPhone (PWA)
 
-1. Open [edimansyahabdin.github.io/statcalc-md](https://edimansyahabdin.github.io/statcalc) in **Safari**
+1. Open [edimansyahabdin.github.io/StatCalc4MD](https://edimansyahabdin.github.io/StatCalc4MD) in **Safari**
 2. Tap the **Share** button (square with arrow)
 3. Tap **"Add to Home Screen"**
 4. Tap **Add** — the app icon appears on your home screen
@@ -71,7 +71,7 @@ StatCalc MD is a free, open-source sample size calculator built for medical rese
 ## Run locally
 
 ```bash
-git clone https://github.com/EdimansyahAbdin/statcalc-md.git
+git clone https://github.com/EdimansyahAbdin/StatCalc4MD.git
 cd statcalc-md
 npm install
 npm run dev
